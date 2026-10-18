@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* bloqueia scroll horizontal */
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+    font-weight: 300;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: #f3f6f8;
+    background-image:
+        radial-gradient(ellipse at 8% 12%,
+            rgba(20, 184, 166, 0.16) 0%,
+            transparent 32%),
+        radial-gradient(ellipse at 92% 28%,
+            rgba(59, 130, 246, 0.12) 0%,
+            transparent 35%),
+        radial-gradient(ellipse at 75% 85%,
+            rgba(45, 212, 191, 0.12) 0%,
+            transparent 30%),
+        radial-gradient(ellipse at 15% 70%,
+            rgba(99, 102, 241, 0.08) 0%,
+            transparent 32%);
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    border-bottom: 4px solid #ffbe34;
+    margin-bottom: 30px;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://t3.ftcdn.net/jpg/02/56/17/92/360_F_256179223_FDWWNhqs8afJPs2W0iUUptiFXte4K8gP.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: white;
+    opacity: 1;
+}
+
+#describe-h1 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    font-family: "Roboto", sans-serif;
+    color: #ffbe34;
+    opacity: 1;
+}
+
+
+
+#select {
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid #f2d58a;
+    margin: 0 auto 40px;
+    width: 50%;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+#day-select {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    background-color: #ff526e;
+    text-align: center;
+    max-width: fit-content;
+    margin: 20px auto 10px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+    color: #ff526e;
+    text-decoration: solid;
+    margin: 0 5px 10px 5px;
+    font-weight: 400;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+ul {
+    list-style-position: outside;
+    text-align: left;
+    margin: 10px auto;
+    display: table;
+    /* força centralização da caixa como um bloco */
+}
+
+#ul-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#day-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que quebre em mais de uma linha de forma fluida */
+    justify-content: center;
+    gap: 10px;
+    /* espaçamento entre os itens */
+    padding: 0;
+}
+
+.item-select {
+    list-style: none;
+}
+
+.item-select a {
+    display: block;
+    padding: 10px 18px;
+    background-color: #ffffff;
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #dce5ec;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(15, 23, 42, 0.05);
+    transition: all 0.2s ease;
+}
+
+.item-select a:hover {
+    background-color: #fff0f3;
+    color: #e83e5b;
+    border-color: #ff526e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 82, 110, 0.12);
+}
+
+p {
+    text-align: center;
+    margin: 5px;
+    font-size: 0.9rem;
+}
+
+hr {
+    margin: 30px 0;
+    border: 10px solid black;
+}
+
+.div-alongamentos {
+    background-color: #f0f2fa;
+    border: 1px solid #d9deef;
+    width: 88%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-block-size: 80%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+.div-aquecimento {
+    border: 0.5px dotted gray;
+    width: 88%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    max-block-size: 80%;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+.img-alongamentos {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 0.5px solid #ffbe34;
+}
+
+section[id]::before {
+    content: "";
+    display: block;
+    height: 2px;
+    /* esse espaço extra */
+    margin-top: -2px;
+    /* “puxa” a seção pra baixo */
+    visibility: hidden;
+}
+
+
+.div-alongamentos-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+span {
+    font-weight: bold;
+}
+
+.exercises {
+    text-align: center;
+    margin: 14px auto;
+    background-color: #fff;
+    background-image:
+        radial-gradient(ellipse at 10% 15%,
+            rgba(226, 232, 240, 0.38) 0%,
+            transparent 55%),
+        radial-gradient(ellipse at 90% 85%,
+            rgba(241, 245, 249, 0.65) 0%,
+            transparent 50%);
+    border: 1px solid #dce5ec;
+    padding: 14px;
+    border-radius: 12px;
+    max-width: 88%;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+}
+
+.hiit {
+    text-align: center;
+    margin: auto 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.p-exercises {
+    font-size: 0.9rem;
+}
+
+#repeat {
+    background-color: whitesmoke;
+    padding: 5px 40px;
+    border-radius: 3px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.pre-pos {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border-top: 4px solid #ffbe34;
+    margin-top: 50px;
+}
+
+#desenvolvido {
+    font-weight: bold;
+    color: white;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+
+@media only screen and (orientation: landscape) {
+
+
+    h2 {
+        font-size: 1.7rem;
+        /* Aumenta o tamanho da fonte para telas maiores */
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        /* Aumenta o tamanho da fonte para telas maiores */
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        /* Aumenta o tamanho da fonte para telas maiores */
+    }
+
+    p,
+    .p-exercises {
+        font-size: 1rem;
+        /* Aumenta o tamanho da fonte para telas maiores */
+    }
+
+    #select {
+        max-width: 80%;
+    }
+
+    /* 1. Flex container com wrap e gap */
+
+    #day-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* 2. Cada item ocupa 1/3 do espaço disponível menos os gaps */
+    .item-select {
+        flex: 0 0 calc((100% - 20px) / 3);
+        box-sizing: border-box;
+        margin: 0;
+        /* zera margens anteriores */
+    }
+
+    /* 3. Garantir que o <a> ocupe todo o bloco */
+    .item-select a {
+        display: block;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .exercises,
+    .hiit,
+    .div-aquecimento,
+    .div-alongamentos {
+        max-width: 50%;
+        margin: 10px auto;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    #select {
+        width: 85%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .item-select a {
+        padding: 10px 14px;
+    }
+}
+
+/* =========================================
+   ABAS COM :TARGET
+   ========================================= */
+
+/* 1. Esconde todas as seções de treino e as linhas (<hr>) por padrão */
+main>section,
+main>hr {
+    display: none;
+}
+
+/* 2. Mostra APENAS a seção que é o "alvo" da URL (quando você clica no link) */
+main>section:target {
+    display: block;
+    animation: fade-in-aba 0.4s ease-out;
+    /* Bônus: animação suave ao aparecer */
+}
+
+/* 3. Animação para a aba não aparecer de forma brusca */
+@keyframes fade-in-aba {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
